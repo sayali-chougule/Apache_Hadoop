@@ -20,3 +20,15 @@ Recommendation Engines use data from
     - Translates text into tasks
 - Google makes recommendation before the user asks for them
 - Big data forecasts future needs and behaviour
+
+## IoT - Internet of Things
+
+- An internet-enabled connected network of small devices such as sensors, processors, embedded devices and communication hardware
+
+- Data collected, analyzed, and acted upon for benefits such as improving customer experience, enhanced productivity and increased revenue
+
+## Major components of IoT
+                Wireless N/w
+Thing or Device  ───────>  Gateway ──────>  Cloud ──────> Analytics ──────> UI
+
+                   Data             Data            Data             Data
