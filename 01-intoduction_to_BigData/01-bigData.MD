@@ -70,3 +70,25 @@ Big data is high-volume, high velocity and/or high-variety information assets th
 - Mobile technologies
 - Scalable infrastructure
 - Resilience
+- Fault recovery
+- Efficient storage and retrieval
+
+### 4. Veracity
+
+**Description**
+
+- Quality, origin and confirmity of facts
+- Accuracy of data
+- Data that comes from people and processes
+
+**Attribute**
+
+- Consistency and completeness
+- Integrity
+- Ambiguity
+
+**Drivers**
+
+- Cost and traceability
+- Robust ingestion
+- ETL mechanism
