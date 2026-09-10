@@ -91,4 +91,4 @@ Big data is high-volume, high velocity and/or high-variety information assets th
 
 - Cost and traceability
 - Robust ingestion
-- ETL mechanism
+- ETL mechanism 
