@@ -21,3 +21,22 @@
 - BI offers a range of tools that provide a quick and easy way to transform data into actionable insights
 - Such insights inform an organization's strategic and tactical business decisions
 - Cognos, Oracle, PowerBI, Business objects and Hyperion
+
+### 4. Cloud Providers
+
+- Offer fundamental infrastructure and support with shared resources including computing storage, networking and analytical software
+- Aws, IBM, GCP and Oracle
+
+### 5. NoSQL Databases
+
+- NoSQL Databases are best suited for Big Data Processing
+    - Store and process vast amount of data scale
+    - Store information in JSON documents instead of relational tables
+    - NoSQL database types include pure document databases, key-value stores, wide column databases, graph databases
+- MongoDB, CouchDB, Cassandra, Redis
+
+### 6. Programming tools
+
+- Perform large-scale analytical tasks and operationalize Big Data
+- Provide all necessary functions for Big Data lifecycle
+- R, Python, SQL, Scala, Julia
