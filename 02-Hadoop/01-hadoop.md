@@ -23,3 +23,12 @@
 ### 3. YARN (Yet Another Resource Negotiator)
 
 - Prepares Hadoop for batch, stream, interactive and graph processing
+
+## The challenges of Hadoop
+
+- Processing transactions (random access)
+- When work cannot be parallelized
+- When there are dependencies in the data
+- Low latency data access
+- Processing lot of small files
+- Intensive calculations with little data
