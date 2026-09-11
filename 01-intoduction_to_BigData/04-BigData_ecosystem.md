@@ -15,3 +15,9 @@
 - Big Data analytics examine large amount of data
 - Analyzed data is visualized using graphs, charts and maps
 - Popular analytics tools available are Tableau, Palantir, SAS, Pentaho and Teradata
+
+### 3. Business Intelligence
+
+- BI offers a range of tools that provide a quick and easy way to transform data into actionable insights
+- Such insights inform an organization's strategic and tactical business decisions
+- Cognos, Oracle, PowerBI, Business objects and Hyperion
