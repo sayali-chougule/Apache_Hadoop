@@ -16,3 +16,34 @@
 - **Fault Tolerant** - If one machine crashes, a copy of the data can be found somewhere else and work continues
 - **Scalable** - One cluster can be scaled into hundreds of nodes
 - **Portable** - Can easily move across multiple platforms
+
+## HDFS Concepts
+
+### 1. Blocks 
+
+- When HDFS receives files, files are broken into smaller chunks called blocks
+- Min amount of data that can be read or written 
+- Provides fault tolerance
+- Default size is 64 MB or 128 MB
+
+**Example** 
+Given:
+
+- File Size (500 MB)
+- Default block size = 128 MB
+
+| Chunk A | Chunk B | Chunk C | Chunk D |
+|---------|---------|---------|---------|
+| 128 MB  | 128 MB  | 128 MB  | 116 MB  |
+
+### 2. Nodes
+
+Node is a single system which is responsible to store and process data
+
+#### 1. Primary Node (Name Node):
+
+- This node regulates file access to the clients and manitains, manages and assigns task to secondary node
+
+#### 2. Secondary Node (Data Node):
+
+- These nodes are actual workers in HDFS system and take instructions from the primary node
