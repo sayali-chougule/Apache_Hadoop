@@ -36,3 +36,11 @@
 - HDFS has a rigid architecture that doesn't allow changes
 - HDFS is suited for write once and read many times
 - HDFS is for storing only
+
+## HBase Architecture
+
+![HBase Architecture](hbase_architecture.png)
+
+### HBase
+
+- 
