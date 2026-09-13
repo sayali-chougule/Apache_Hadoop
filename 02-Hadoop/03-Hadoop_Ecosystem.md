@@ -43,4 +43,4 @@ Hadoop Ecosystem is made up of components that support one another
 - Stands for Hadoop User Experience
 - Allows to upload, brows and query the data
 - Runs pig jobs and workflow
-- Provides editors for several SQL query language like Hive and MySQL
+- Provides editors for several SQL query language like Hive and MySQL 
