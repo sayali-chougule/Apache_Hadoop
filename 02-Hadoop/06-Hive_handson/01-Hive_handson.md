@@ -1,4 +1,4 @@
-### In this lab, created a table in hive, added data to the table from csv and listed the data contained in the table.
+### In this, created a table in hive, added data to the table from csv and listed the data contained in the table.
 
 
 
