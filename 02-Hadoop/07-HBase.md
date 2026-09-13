@@ -43,4 +43,31 @@
 
 ### HBase
 
-- 
+- HBase sits on top of HDFS
+- HDFS provides a distributed environment for the storage and it is a file system designed to run on commodity hardware
+- It stores each file in multiple blocks and to maintain fault tolerance, it replicates the blocks across a Hadoop cluster
+
+### HMaster
+
+- It is a master server
+- It monitors the region server instances
+- Assigns regions to region servers, and distributes services to different region servers
+- Manages any changes that are made to the schema and metadata operations
+
+### Region Servers
+
+- Receives read and write requests from the client and assign the request to a specific region where the column family resides
+- They are responsible for serving and managing regions that are present in a distributed cluster
+- Communications directly with the client to facilitate requests
+
+### Region
+
+- Smallest unit of HBase cluster 
+- Contains multiple stores
+- Two components - Hfile & Memstore
+
+### ZooKeeper
+
+- Centralized service for maintaining configuration information to maintain healthy links between nodes
+- Provides distributed synchonization
+- Tracks server failure and network partitions by triggering an error message and then starts repairing the failed nodes
