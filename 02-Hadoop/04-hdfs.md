@@ -88,3 +88,28 @@ File Size = 500 MB
 |   Copy 2    |   |   Copy 1    |   |   Copy 2    |   |   Copy 1    |
 +-------------+   +-------------+   +-------------+   +-------------+
 ```
+
+### 5. Read and Write Operations
+
+- HDFS allows write once read many operations
+
+#### Read
+- Client will send a request to the primary node to get the location of the data nodes containing blocks
+- Client will read files closest to the data nodes
+
+#### Write
+- The name node makes sure that file doesn't exist
+- If file exists client gets on **IO Exception** messages
+- If the file doesn't exist, the client is given access to start writing files
+
+**Client fulfills a user's request by interacting with the Name node and Data nodes**
+
+## Hadoop Architecture
+
+![Hadoop Architecture](image.png)
+
+- Hadoop follows a concept of primary/secondary node architecture
+- The architecture is such that per cluster, there is one name node and multiple data nodes
+- Internally, a file is split into one or more blocks and these blocks are stored in a set of data nodes
+- The name node oversees opening, closing, renaming file operations and mapping file blocks to the data node 
+- The data nodes are responsible for read and write requests from the client and peform the creation, replication and deletion of file blocks based on instructions from name node
