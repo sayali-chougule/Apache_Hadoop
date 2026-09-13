@@ -106,7 +106,7 @@ File Size = 500 MB
 
 ## Hadoop Architecture
 
-![Hadoop Architecture](image.png)
+![Hadoop Architecture](hdfs_architecture.png)
 
 - Hadoop follows a concept of primary/secondary node architecture
 - The architecture is such that per cluster, there is one name node and multiple data nodes
