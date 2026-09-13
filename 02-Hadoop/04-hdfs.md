@@ -59,3 +59,32 @@ Node is a single system which is responsible to store and process data
 - Improves cluster performance by reducing network traffic
 - Name node keeps rack ID information
 - Replication can be done through rack awareness
+
+### 4. Replication
+
+- HDFS uses rack awareness concept to create replicas to make sure that the data is reliable and available and that the network bandwidth is properly utilized
+- Creates copy of data block
+- Copies are created for backup purposes
+- **Replication factor** : Number of times the data block was copied
+
+**Replication Example**
+
+File Size = 500 MB
+
+| Chunk A (128 MB) | Chunk B (128 MB) | Chunk C (128 MB) | Chunk D (116 MB) |
+|------------------|------------------|------------------|------------------|
+| Chunk A  Chunk B | Chunk B  Chunk D | Chunk A  Chunk D | Chunk B  Chunk C |
+| Copy 1   Copy 2  | Copy 1   Copy 2  | Copy 1   Copy 2  | Copy 1   Copy 2  |
+
+
+```
++-------------+   +-------------+   +-------------+   +-------------+
+|   Rack 1    |   |   Rack 2    |   |   Rack 3    |   |   Rack 4    |
+|             |   |             |   |             |   |             |    
+|  Chunk A    |   |  Chunk B    |   |  Chunk D    |   |  Chunk C    |
+|   Copy 1    |   |   Copy 1    |   |   Copy 2    |   |   Copy 2    |
+|             |   |             |   |             |   |             |
+|  Chunk B    |   |  Chunk C    |   |  Chunk A    |   |  Chunk D    |
+|   Copy 2    |   |   Copy 1    |   |   Copy 2    |   |   Copy 1    |
++-------------+   +-------------+   +-------------+   +-------------+
+```
