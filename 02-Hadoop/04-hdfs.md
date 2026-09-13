@@ -58,4 +58,4 @@ Node is a single system which is responsible to store and process data
 
 - Improves cluster performance by reducing network traffic
 - Name node keeps rack ID information
-- 
+- Replication can be done through rack awareness
