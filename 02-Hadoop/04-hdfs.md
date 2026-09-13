@@ -47,3 +47,15 @@ Node is a single system which is responsible to store and process data
 #### 2. Secondary Node (Data Node):
 
 - These nodes are actual workers in HDFS system and take instructions from the primary node
+
+### 3. Rack Awareness in HDFS
+
+- When performing operations like read and write, it is important that the name node maximize performance by choosing the data nodes closest
+
+- This could be by choosing data nodes on same rack or nearby racks. This is called as Rack Awareness
+
+**A Rack is the collection of about 40 to 50 data nodes using the same network switch**
+
+- Improves cluster performance by reducing network traffic
+- Name node keeps rack ID information
+- 
