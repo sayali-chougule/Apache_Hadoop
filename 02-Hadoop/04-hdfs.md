@@ -11,4 +11,8 @@
 ## Key Features
 
 - **Cost Efficient** - The storage hardware is not expensive
-- **Large amount of data** - 
+- **Large amount of data** - HDFS can store upto petabytes of data
+- **Replication** - Makes pieces of data on multiple machines
+- **Fault Tolerant** - If one machine crashes, a copy of the data can be found somewhere else and work continues
+- **Scalable** - One cluster can be scaled into hundreds of nodes
+- **Portable** - Can easily move across multiple platforms
