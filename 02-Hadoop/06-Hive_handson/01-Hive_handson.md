@@ -34,7 +34,7 @@ docker pull apache/hive:4.0.0-alpha-1
 docker run -d -p 10000:10000 -p 10002:10002 --env SERVICE_NAME=hiveserver2 -v /home/project/data:/hive_custom_data --name myhiveserver apache/hive:4.0.0-alpha-1
 ```
 
-3. Run the following command, which allows to access beeline. This is a SQL cli where we can create, modify, delete table, and access data in the table
+3. Run the following command, which allows to access ``beeline``. This is a SQL cli where we can create, modify, delete table, and access data in the table
 
 ```sh
 docker exec -it myhiveserver beeline -u 'jdbc:hive2://localhost:10000/'
