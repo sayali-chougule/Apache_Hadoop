@@ -20,3 +20,19 @@
 - New columns can be added to column families at anytime
 - HBase schema is very flexible
 - HBase has master nodes to manage the cluster and region servers to perform the work
+
+## Difference between HBase and HDFS
+
+### HBase
+
+- HBase stores data in the form of columns and rows in a table
+- HBase allows dynamic changes
+- HBase is suitable for random writes and reads of data stored in HDFS
+- HBase allows for storing and processing of Big Data
+
+### HDFS
+
+- HDFS stores the data in distributed manner across different nodes on that network
+- HDFS has a rigid architecture that doesn't allow changes
+- HDFS is suited for write once and read many times
+- HDFS is for storing only
