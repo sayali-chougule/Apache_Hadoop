@@ -50,4 +50,6 @@ ls output
 cat  output/part-r-00000
 ```
 
+The image below shows how the MapReduce wordcount happens
+
 ![MapReduce](MapReduce.png)
